@@ -60,7 +60,7 @@ function Hero() {
         component="h1"
         fontSize={9}
         fontWeight={800}
-        color="#ffffff"
+        color="white"
       >
         Front-end engineer.
       </Text>

@@ -55,6 +55,16 @@ export const globalCss = css`
    * e.g. 1.6rem = 16px
    */
   :root {
+    --color-black: #2c2c2c;
+    --color-white: #ffffff;
+    --color-red: #fc4d53;
+    --color-light-red: #fa696e;
+    --color-yellow: #fed237;
+    --color-light-yellow: #fee788;
+    --color-purple: #5c5cf1;
+    --color-light-purple: #8f92fe;
+    --color-light-gray: #fafafa;
+
     /* e.g. (10 / 16) * 100 = 62.5% */
     font-size: ${(typography.rootFontSize / browserBaseFontSize) * 100}%;
   }
@@ -68,7 +78,7 @@ export const globalCss = css`
     font-weight: 300;
     /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
     overflow-x: hidden;
-    color: #3a3a3a;
+    color: var(--color-black);
   }
 
   /**
