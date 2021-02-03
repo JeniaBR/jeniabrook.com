@@ -74,7 +74,7 @@ export const globalCss = css`
    */
   body {
     font-family: ${typography.fontPrimary};
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
     /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
     overflow-x: hidden;
