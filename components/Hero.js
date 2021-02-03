@@ -1,5 +1,6 @@
 import { css, keyframes } from '@emotion/react';
-import { typography } from '../styles/theme';
+
+import Text from './Text';
 
 const blink = keyframes`
   50% { opacity: 0.0; }
@@ -15,9 +16,6 @@ const heroCss = css`
 `;
 
 const introductionCss = css`
-  font-family: ${typography.fontSerif};
-  font-size: 4rem;
-
   @media (max-width: 1024px) {
     font-size: 2.5rem;
   }
@@ -28,10 +26,7 @@ const introductionCss = css`
 `;
 
 const headingTitleCss = css`
-  font-size: 9rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-top: 30px;
+  margin-top: 0;
   text-align: center;
 
   ::after {
@@ -51,8 +46,24 @@ const headingTitleCss = css`
 function Hero() {
   return (
     <section css={heroCss}>
-      <div css={introductionCss}>I'm Jenia Brook.</div>
-      <h1 css={headingTitleCss}>Front-end engineer.</h1>
+      <Text
+        css={introductionCss}
+        component="h2"
+        fontSize={4}
+        serifFont
+        fontWeight={500}
+      >
+        I'm Jenia Brook.
+      </Text>
+      <Text
+        css={headingTitleCss}
+        component="h1"
+        fontSize={9}
+        fontWeight={800}
+        color="#ffffff"
+      >
+        Front-end engineer.
+      </Text>
     </section>
   );
 }
