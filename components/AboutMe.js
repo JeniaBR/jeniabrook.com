@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { colors } from '../styles/theme';
-import Tile from './Tile';
+import Tiles from './Tiles';
 
 const aboutMeCss = css`
   background-color: ${colors.lightGray};
@@ -9,11 +9,7 @@ const aboutMeCss = css`
 function AboutMe() {
   return (
     <section css={aboutMeCss}>
-      <Tile
-        primaryColor={colors.purple}
-        secondaryColor={colors.yellow}
-        deg={45}
-      />
+      <Tiles />
     </section>
   );
 }
