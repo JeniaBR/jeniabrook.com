@@ -1,4 +1,5 @@
 import { css, keyframes } from '@emotion/react';
+import { colors } from '../styles/theme';
 
 import Text from './Text';
 
@@ -8,7 +9,7 @@ const blink = keyframes`
 
 const heroCss = css`
   min-height: 100vh;
-  background-color: #f66;
+  background-color: ${colors.lightRed};
   display: flex;
   flex-direction: column;
   justify-content: center;
